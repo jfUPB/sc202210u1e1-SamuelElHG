@@ -1,6 +1,6 @@
-// COLOCO AQUÍ TU NOMBRE COMPLETO
-// COLOCA AQUÍ TU ID
-// COLOCA AQUÍ TU CORREO ELECTRÓNICO
+// Samuel Hernández Gómez
+// 000418876
+// samuel.hernandezg@upb.edu.co
 (START)
     @START
     0;JMP
