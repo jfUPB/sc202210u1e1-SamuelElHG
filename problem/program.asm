@@ -1,4 +1,4 @@
-// Samuel Hernández Gómez
+// Samuel 
 // 000418876
 // samuel.hernandezg@upb.edu.co
 (START)
