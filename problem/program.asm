@@ -1,4 +1,3 @@
-
 // Samuel Hernández Gómez
 // 000418876
 // samuel.hernandezg@upb.edu.co
@@ -23,7 +22,7 @@
     D=A
     @2 
     M=D
-    @2 //valor de la F
+    @70 //valor de la F
     D=A
     @3 //lugar donde está la F
     M=D
@@ -39,16 +38,9 @@
     @3
     A=M
     D=D-A
-    @44
-    D;JEQ
-    @24576 //Comparador si el último valor es la C
-    D=M
-    @4
-    A=M
-    D=D-A
-    @59
-    D;JEQ
-    //ahora el llenado, sin comparación
+    @48
+    D;JNE
+    //ahora el llenado
     @5
     M=M+1
     A=M
@@ -58,13 +50,21 @@
     @5
     A=M
     D=D-A
-    @30
+    @37
     D;JGT
     //hasta aqu+i el llenado
     @16383
     D=A
     @5
     M=D
+    0;JMP
+    @24576 //Comparador si el último valor es la C
+    D=M
+    @4
+    A=M
+    D=D-A
+    @0
+    D;JNE
     //seteamos el valor del contador al inicio como lo necesitamos
     //ahora vamos a ver un desllenado
     @5
@@ -84,10 +84,3 @@
     @5
     M=D
     0;JMP
-
-
-
-
-
-
-    
