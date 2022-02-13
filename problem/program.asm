@@ -14,6 +14,10 @@
     D=A
     @1
     M=D
+    @16383 //usaremos de contador
+    D=A
+    @5
+    M=D
     @24576 // último pixel a pintar
     D=A
     @2 
@@ -27,8 +31,44 @@
     @4  //espacio donde está la C
     M=D
     D=0
-    @0
+    @30
     D;JEQ
+    //ahora el llenado, sin comparación
+    @5
+    M=M+1
+    A=M
+    M=-1
+    @2
+    D=M
+    @5
+    A=M
+    D=D-A
+    @30
+    D;JGT
+    //hasta aqu+i el llenado
+    @16383
+    D=A
+    @5
+    M=D
+    //seteamos el valor del contador al inicio como lo necesitamos
+    //ahora vamos a ver un desllenado
+    @5
+    M=M+1
+    A=M
+    M=0
+    @2
+    D=M
+    @5
+    A=M
+    D=D-A
+    @45
+    D;JGT
+    //hasta aquí el desllenado
+    @16383
+    D=A
+    @5
+    M=D
+    0;JMP
 
 
     
