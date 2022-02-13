@@ -57,7 +57,7 @@
     D=A
     @5
     M=D
-    0;JMP
+    //0;JMP
     @24576 //Comparador si el último valor es la C
     D=M
     @4
@@ -76,7 +76,7 @@
     @5
     A=M
     D=D-A
-    @45
+    @59
     D;JGT
     //hasta aquí el desllenado
     @16383
