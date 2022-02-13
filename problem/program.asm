@@ -34,6 +34,20 @@
     D=0
     @30
     D;JEQ
+    @24576 //Comparador si el último valor es la F
+    D=M
+    @3
+    A=M
+    D=D-A
+    @44
+    D;JEQ
+    @24576 //Comparador si el último valor es la C
+    D=M
+    @4
+    A=M
+    D=D-A
+    @59
+    D;JEQ
     //ahora el llenado, sin comparación
     @5
     M=M+1
@@ -70,6 +84,10 @@
     @5
     M=D
     0;JMP
+
+
+
+
 
 
     
